@@ -33,7 +33,7 @@ Como adicional, resolvi trazer também, os 3 principais países reservando-os em
 <br/>
 
 > ## Demonstração
-<img src="https://github.com/Guimonteirol/SearchMyName/tree/master/public/gif">
+<img src="https://github.com/Guimonteirol/SearchMyName/blob/master/public/gif/searchMyName.gif">
 
 <br/>
 
