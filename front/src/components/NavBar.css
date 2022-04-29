@@ -1,3 +1,11 @@
-span{
-    color: blanchedalmond;
+.navbar-brand span{
+    color: rgb(205, 255, 210);
+}
+
+.navbar-brand h3{
+    font-size: 20px;
+}
+
+.icons a:hover{
+    filter: brightness(.6);
 }

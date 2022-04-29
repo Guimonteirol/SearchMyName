@@ -1,3 +1,11 @@
+html{
+ height: 100vh;
+
+}
+
+p.footer{
+  font-size: 12px;
+}
 
 .App{
   height: 100%;
@@ -14,7 +22,7 @@
 }
 
 .title{
-  font-size: 85px;
+  font-size: 60px;
   color: black;
   animation: girarTitulo 2s;
 }
