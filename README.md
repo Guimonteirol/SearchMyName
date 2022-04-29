@@ -56,7 +56,7 @@ Assim, sigo com a mesma lógica com o for of, para poder trazer os nomes dos pa�
     ❯ git clone https://github.com/Guimonteirol/mundo_livre.git
 
     # Enter on its directory
-    ❯ cd searchName
+    ❯ cd front
 
     # Launch the Application    
     ❯ npm start
