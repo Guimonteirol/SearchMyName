@@ -12,24 +12,15 @@ Usei também Icons da biblioteca "react-icons/bs";
 
 <br/>
 
-> ## Lógicas e Conceitos 
-1. No component App.js criei duas funções acionadas pelo click, a primeira openSearch() começa com uma validação para saber se há conteúdo no campo,
-e em seguida, como estou trabalhando com uma API, utilizo da programção assíncrona e capturo o nome com a variável "input". Dessa forma, para acessar
-as variáveis que irei trabalhar, a "country_id" e a "probability" atribuo cada uma "const nameCountry = response.data.country[0].country_id;"
-"const probability = response.data.country[0].probability;" dessa maneira, o que me retorna os primeiros e e maiores incidências dos nomes do obejto;
-2. Para acessar o arquivo .json importei o método "useEffect" para poder usar o fetch, e com isso tive acesso ao arquivo, no qual percorrir com um for of,
-para identificar qual nome corresponde ao código em questão;
-3. A cada ação, envio um setInput("") com o intuito de sempre manter o campus livre;
-4. Na segunda função oenCountries() começo atribuindo à variável "valida" o objeto "data" que corresponde ao conteúdo vindo da api, para poder usar a lógica
-{Object.keys(valida).length > 0} e fazer o card com os principais países e porcentagens, pois quando for diferente de 0, ele estará disponível para ser mostrado,
-e essa ação é ativada com click no botão "onClick={openCountries}". E a cada nova pesquisa essa variável é zerada, para ser preenchia apenas se o usuário tiver interesse.
-Assim, sigo com a mesma lógica com o for of, para poder trazer os nomes dos países atrvés do code do arquivo .json;
+> ## Lógica e Conceito 
+- O nome digitado é encapsulado em uma variável, que é enviada para o serviço que está conectado à api <a href= "https://nationalize.io"> Nationalize.io </a>, onde é feita a busca e um objeto é retornado
+com as probabilidades e os códigos dos países, que são filtrados e capturados para serem tratados no front. Utilizo os dados do <a href= "https://gist.github.com/almost/7748738#file-countries-json"> countries.json </a> para retornar o nome do país através do código (code). Com essas informações em mãos consigo retornor o país de maior probabilidade.
+Como adicional, resolvi trazer também, os 3 principais países reservando-os em um array, que alimenta o front-end dinamicamente. Além disso, utilizei a api <a href= "https://www.countryflagsapi.com"> CountryFlagsAPI </a>  para retornar a bandeira dos países com maior probabilidade.
 
 <br/>
 
 > ## Funcionalidades 
 - Encontrar país com maior probabilidade;
-
 
 <br/>
 
@@ -38,6 +29,11 @@ Assim, sigo com a mesma lógica com o for of, para poder trazer os nomes dos pa�
 - Consumo da api <a href= "https://www.countryflagsapi.com"> CountryFlagsAPI </a> para rotorno das bandeiras de cada país;
 - Layout Responsivo;
 - Cálculo da porcentagem dos respectivos países;
+
+<br/>
+
+> ## Demonstração
+<img src="https://github.com/Guimonteirol/mundo_livre/blob/master/front/public/gif/searchMyName.gif">
 
 <br/>
 
@@ -60,3 +56,8 @@ Assim, sigo com a mesma lógica com o for of, para poder trazer os nomes dos pa�
 
     # Launch the Application    
     ❯ npm start
+
+<br/>
+
+> ## Autor do Projeto
+<a href="https://www.linkedin.com/in/guilhermemonteirol/"> Guilherme Monteiro - Linkedin</a>
